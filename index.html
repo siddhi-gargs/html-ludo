@@ -41,14 +41,6 @@
       float: left;
     }
 
-    .wining-red {
-      background-color: red;
-    }
-
-    .wining-blue {
-      background-color: rgb(14, 14, 248);
-    }
-
     .white-path {
       background-color: white;
     }
@@ -86,14 +78,16 @@
       background-color: rgb(9, 9, 238);
     }
 
-    #green-player,
-    .green-circle {
+    .green-player {
       background-color: green;
     }
 
-    #red-player,
-    .red-circles {
+    .red-player {
       background-color: red;
+    }
+
+    .yellow-player {
+      background-color: yellow;
     }
 
     .space-for-circles {
@@ -124,11 +118,6 @@
       border: 0.8px solid black;
 
     }
-
-    #yellow-player,
-    .yellow-circle {
-      background-color: yellow;
-    }
   </style>
 </head>
 
@@ -152,22 +141,22 @@
         <div class="vertical-column">
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block red-player"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
         </div>
         <div class="vertical-column">
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block" style="background-color: red;"></div>
-          <div class="steps vertical-column-block" style="background-color: red;"></div>
-          <div class="steps vertical-column-block" style="background-color: red;"></div>
-          <div class="steps vertical-column-block" style="background-color: red;"></div>
-          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block red-player"></div>
+          <div class="steps vertical-column-block red-player" ;"></div>
+          <div class="steps vertical-column-block red-player" ;"></div>
+          <div class="steps vertical-column-block red-player" ;"></div>
+          <div class="steps vertical-column-block red-player" ;"></div>
         </div>
         <div class="vertical-column">
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block red-player"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
@@ -178,10 +167,10 @@
         <div class="insidebluebox">
           <div class="chances">
             <div class="space-for-circles">
-              <div class="circles red-circles"></div>
-              <div class="circles red-circles"></div>
-              <div class="circles red-circles"></div>
-              <div class="circles red-circles"></div>
+              <div class="circles red-player"></div>
+              <div class="circles red-player"></div>
+              <div class="circles red-player"></div>
+              <div class="circles red-player"></div>
             </div>
           </div>
         </div>
@@ -221,16 +210,16 @@
           <div class="steps"></div>
           <div class="steps"></div>
           <div class="steps"></div>
-          <div class="steps green-circle"></div>
+          <div class="steps green-player"></div>
           <div class="steps"></div>
           <div class="steps"></div>
         </div>
         <div class="blocks">
-          <div class="steps green-circle"></div>
-          <div class="steps green-circle"></div>
-          <div class="steps green-circle"></div>
-          <div class="steps green-circle"></div>
-          <div class="steps green-circle"></div>
+          <div class="steps green-player"></div>
+          <div class="steps green-player"></div>
+          <div class="steps green-player"></div>
+          <div class="steps green-player"></div>
+          <div class="steps green-player"></div>
           <div class="steps"></div>
         </div>
         <div class="blocks">
@@ -238,7 +227,7 @@
           <div class="steps"></div>
           <div class="steps"></div>
           <div class="steps"></div>
-          <div class="steps green-circle"></div>
+          <div class="steps green-player<!--  -->"></div>
           <div class="steps"></div>
         </div>
       </div>
@@ -248,10 +237,10 @@
         <div class="insidebluebox">
           <div class="chances">
             <div class="space-for-circles" style="background-color: rgb(170, 160, 160);">
-              <div class="circles yellow-circle"></div>
-              <div class="circles yellow-circle"></div>
-              <div class="circles yellow-circle"></div>
-              <div class="circles yellow-circle"></div>
+              <div class="circles yellow-player"></div>
+              <div class="circles yellow-player"></div>
+              <div class="circles yellow-player"></div>
+              <div class="circles yellow-player"></div>
             </div>
           </div>
         </div>
@@ -263,22 +252,22 @@
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block yellow-player"></div>
           <div class="steps vertical-column-block"></div>
         </div>
         <div class="vertical-column">
-          <div class="steps vertical-column-block yellow-circle"></div>
-          <div class="steps vertical-column-block yellow-circle"></div>
-          <div class="steps vertical-column-block yellow-circle"></div>
-          <div class="steps vertical-column-block yellow-circle"></div>
-          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block yellow-player"></div>
+          <div class="steps vertical-column-block yellow-player"></div>
+          <div class="steps vertical-column-block yellow-player"></div>
+          <div class="steps vertical-column-block yellow-player"></div>
+          <div class="steps vertical-column-block yellow-player"></div>
           <div class="steps vertical-column-block"></div>
         </div>
         <div class="vertical-column">
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block yellow-player"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
         </div>
@@ -287,10 +276,10 @@
         <div class="insidebluebox">
           <div class="chances">
             <div class="space-for-circles">
-              <div class="circles green-circle"></div>
-              <div class="circles green-circle"></div>
-              <div class="circles green-circle"></div>
-              <div class="circles green-circle"></div>
+              <div class="circles green-player"></div>
+              <div class="circles green-player"></div>
+              <div class="circles green-player"></div>
+              <div class="circles green-player"></div>
             </div>
           </div>
         </div>
