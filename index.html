@@ -15,10 +15,23 @@
       border: 1px solid black;
     }
 
+    .vertical-path {
+      width: 156px;
+      height: 303px;
+      border: 1px solid black;
+    }
+
     .blocks {
       width: 306px;
       height: 50px;
       border: 1px solid black;
+    }
+
+    .vertical-column {
+      width: 50px;
+      height: 303px;
+      border: 1px solid black;
+      float: left;
     }
 
     .steps {
@@ -37,7 +50,7 @@
     }
 
     .white-path {
-      background-color: yellow;
+      background-color: white;
     }
 
     .box {
@@ -73,6 +86,15 @@
       background-color: rgb(9, 9, 238);
     }
 
+    #green-player,
+    .green-circle {
+      background-color: green;
+    }
+
+    #red-player,
+    .red-circles {
+      background-color: red;
+    }
 
     .space-for-circles {
       height: 150px;
@@ -81,48 +103,39 @@
       background-color: greenyellow;
     }
 
-    .red-color {
-      background-color: red;
-    }
 
-    .blue-section {
+    .path-winningWay {
       width: 100%;
       display: flex;
+    }
+
+    .vertical-column-block {
+      background-color: white;
+      border-bottom: 0.8px solid black;
+    }
+
+    .wining-box {
+      width: 156px;
+      height: 156px;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9bFsx1LMcznwqlMB0C4BF1rCUwlrD4jHxA&s);
+      background-repeat: no-repeat;
+      /* background-position-x: 10px; */
+      background-size: cover;
+      border: 0.8px solid black;
+
+    }
+
+    #yellow-player,
+    .yellow-circle {
+      background-color: yellow;
     }
   </style>
 </head>
 
 <body>
 
-
   <main style="margin: 40px 20%">
-    <!-- <div class="path">
-            <div class="blocks">
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-            </div>
-            <div class="blocks">
-              <div class="steps white-path"></div>
-              <div class="steps wining-red"></div>
-              <div class="steps wining-red"></div>
-              <div class="steps wining-red"></div>
-              <div class="steps wining-red"></div>
-              <div class="steps wining-red"></div>
-            </div>
-            <div class="blocks">
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-              <div class="steps white-path"></div>
-            </div>
-          </div> -->
-    <section class="blue-section">
+    <section class="path-winningWay">
       <div class="box" id="blueColor">
         <div class="insidebluebox">
           <div class="chances">
@@ -135,7 +148,47 @@
           </div>
         </div>
       </div>
-      <div class="horizontal-path" style="transform: rotate(270deg);">
+      <div class="vertical-path" style="display: inline;">
+        <div class="vertical-column">
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+        </div>
+        <div class="vertical-column">
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block" style="background-color: red;"></div>
+        </div>
+        <div class="vertical-column">
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block" style="background-color: red;"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+        </div>
+      </div>
+      <div class="box" id="red-player">
+        <div class="insidebluebox">
+          <div class="chances">
+            <div class="space-for-circles">
+              <div class="circles red-circles"></div>
+              <div class="circles red-circles"></div>
+              <div class="circles red-circles"></div>
+              <div class="circles red-circles"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="path-winningWay">
+      <div class="horizontal-path">
         <div class="blocks">
           <div class="steps white-path"></div>
           <div class="steps wining-blue"></div>
@@ -161,45 +214,88 @@
           <div class="steps white-path"></div>
         </div>
       </div>
+      <div class="wining-box" style="display: inline;">
+      </div>
+      <div class="horizontal-path">
+        <div class="blocks">
+          <div class="steps"></div>
+          <div class="steps"></div>
+          <div class="steps"></div>
+          <div class="steps green-circle"></div>
+          <div class="steps"></div>
+          <div class="steps"></div>
+        </div>
+        <div class="blocks">
+          <div class="steps green-circle"></div>
+          <div class="steps green-circle"></div>
+          <div class="steps green-circle"></div>
+          <div class="steps green-circle"></div>
+          <div class="steps green-circle"></div>
+          <div class="steps"></div>
+        </div>
+        <div class="blocks">
+          <div class="steps"></div>
+          <div class="steps"></div>
+          <div class="steps"></div>
+          <div class="steps"></div>
+          <div class="steps green-circle"></div>
+          <div class="steps"></div>
+        </div>
+      </div>
     </section>
-    <div class="horizontal-path">
-      <div class="blocks">
-        <div class="steps white-path"></div>
-        <div class="steps wining-blue"></div>
-        <div class="steps white-path"></div>
-        <div class="steps white-path"></div>
-        <div class="steps white-path"></div>
-        <div class="steps white-path"></div>
-      </div>
-      <div class="blocks">
-        <div class="steps white-path"></div>
-        <div class="steps wining-blue"></div>
-        <div class="steps wining-blue"></div>
-        <div class="steps wining-blue"></div>
-        <div class="steps wining-blue"></div>
-        <div class="steps wining-blue"></div>
-      </div>
-      <div class="blocks">
-        <div class="steps white-path"></div>
-        <div class="steps white-path"></div>
-        <div class="steps wining-blue "></div>
-        <div class="steps white-path"></div>
-        <div class="steps white-path"></div>
-        <div class="steps white-path"></div>
-      </div>
-    </div>
-    <div class="box red-color">
-      <div class="insidebluebox">
-        <div class="chances">
-          <div class="space-for-circles" style="background-color: yellow;">
-            <div class="circles red-color"></div>
-            <div class="circles red-color"></div>
-            <div class="circles red-color"></div>
-            <div class="circles red-color"></div>
+    <section class="path-winningWay">
+      <div class="box" id="yellow-player">
+        <div class="insidebluebox">
+          <div class="chances">
+            <div class="space-for-circles" style="background-color: rgb(170, 160, 160);">
+              <div class="circles yellow-circle"></div>
+              <div class="circles yellow-circle"></div>
+              <div class="circles yellow-circle"></div>
+              <div class="circles yellow-circle"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="vertical-path" style="display: inline;">
+        <div class="vertical-column">
+
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block"></div>
+        </div>
+        <div class="vertical-column">
+          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block"></div>
+        </div>
+        <div class="vertical-column">
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block yellow-circle"></div>
+          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block"></div>
+        </div>
+      </div>
+      <div class="box" id="green-player">
+        <div class="insidebluebox">
+          <div class="chances">
+            <div class="space-for-circles">
+              <div class="circles green-circle"></div>
+              <div class="circles green-circle"></div>
+              <div class="circles green-circle"></div>
+              <div class="circles green-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
