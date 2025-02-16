@@ -4,6 +4,13 @@
 <head>
   <title>Ludo Board</title>
   <style>
+    :root {
+      --bg-red: red;
+      --bg-green: green;
+      --bg-blue: blue;
+      --bg-yellow: yellow;
+    }
+
     * {
       margin: 0px;
       padding: 0px;
@@ -123,6 +130,7 @@
 
 <body>
 
+
   <main style="margin: 40px 20%">
     <section class="path-winningWay">
       <div class="box" id="blueColor">
@@ -141,23 +149,23 @@
         <div class="vertical-column">
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block red-player"></div>
+          <div class="steps vertical-column-block" style="background-color: var(--bg-red);"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
         </div>
         <div class="vertical-column">
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block red-player"></div>
-          <div class="steps vertical-column-block red-player" ;"></div>
-          <div class="steps vertical-column-block red-player" ;"></div>
-          <div class="steps vertical-column-block red-player" ;"></div>
-          <div class="steps vertical-column-block red-player" ;"></div>
+          <div class="steps vertical-column-block" style="background-color: var(--bg-red);"></div>
+          <div class="steps vertical-column-block" style="background-color: var(--bg-red);"></div>
+          <div class="steps vertical-column-block" style="background-color: var(--bg-red);"></div>
+          <div class="steps vertical-column-block" style="background-color: var(--bg-red);"></div>
+          <div class="steps vertical-column-block" style="background-color: var(--bg-red);"></div>
         </div>
         <div class="vertical-column">
           <div class="steps vertical-column-block"></div>
-          <div class="steps vertical-column-block red-player"></div>
-          <div class="steps vertical-column-block"></div>
+          <div class="steps vertical-column-block" style="background-color: var(--bg-red);"></div>
+          <div class=" steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
           <div class="steps vertical-column-block"></div>
@@ -180,7 +188,7 @@
       <div class="horizontal-path">
         <div class="blocks">
           <div class="steps white-path"></div>
-          <div class="steps wining-blue"></div>
+          <div class="steps"></div>
           <div class="steps white-path"></div>
           <div class="steps white-path"></div>
           <div class="steps white-path"></div>
